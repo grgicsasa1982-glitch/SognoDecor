@@ -1,0 +1,184 @@
+index.html
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sogno Decor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background:#f5efe6;
+    color:#333;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display', serif;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    color:#b08d57;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.4);
+    padding:20px 40px;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    color:#b08d57;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.contact{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+}
+
+button{
+    background:#b08d57;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#b08d57;
+    color:white;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <h2>Sogno Decor</h2>
+    <div>
+        <a href="#home">Početna</a>
+        <a href="#about">O nama</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+</nav>
+
+<div class="hero" id="home">
+    <h1>Dekoracije za nezaboravne trenutke</h1>
+</div>
+
+<section>
+    <h2 class="section-title">Naše dekoracije</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6">
+        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+        <img src="https://images.unsplash.com/photo-1608889175119-b7c3e5b0df0b">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">O nama</h2>
+    <div class="about">
+        <p>
+        Sogno Decor specijaliziran je za dekoracije svadbi, rođendana,
+        božićnih i uskrsnih proslava te svih posebnih trenutaka u vašem životu.
+        Naša strast su detalji, elegancija i stvaranje atmosfere
+        koja ostavlja bez daha.
+        </p>
+        <p>
+        Svaki projekt prilagođavamo vašim željama,
+        kombinirajući bež i zlatne tonove s modernim dizajnom.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="contact">
+        <form>
+            <input type="text" placeholder="Ime i prezime">
+            <input type="email" placeholder="Email">
+            <textarea rows="5" placeholder="Poruka"></textarea>
+            <button type="submit">Pošalji upit</button>
+        </form>
+        <p>Email: info@sognodecor.hr</p>
+        <p>Telefon: +385 XX XXX XXXX</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sogno Decor
+</footer>
+
+</body>
+</html>
