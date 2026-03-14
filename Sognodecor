@@ -1,184 +1,73 @@
-index.html
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sogno Decor</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-    margin:0;
-    font-family: 'Montserrat', sans-serif;
-    background:#f5efe6;
-    color:#333;
-}
-
-h1,h2,h3{
-    font-family:'Playfair Display', serif;
-}
-
-nav{
-    position:fixed;
-    width:100%;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
-    z-index:1000;
-}
-
-nav a{
-    text-decoration:none;
-    color:#b08d57;
-    margin-left:20px;
-    font-weight:500;
-}
-
-.hero{
-    height:100vh;
-    background:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf') center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
-
-.hero h1{
-    font-size:60px;
-    background:rgba(0,0,0,0.4);
-    padding:20px 40px;
-}
-
-section{
-    padding:100px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    color:#b08d57;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.gallery img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    transition:0.4s;
-}
-
-.gallery img:hover{
-    transform:scale(1.05);
-}
-
-.about{
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-    line-height:1.8;
-}
-
-.contact{
-    max-width:600px;
-    margin:auto;
-}
-
-input, textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ddd;
-}
-
-button{
-    background:#b08d57;
-    color:white;
-    padding:12px 25px;
-    border:none;
-    cursor:pointer;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#b08d57;
-    color:white;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sogno Decor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; color:#333; }
+    header { background:#222; color:#fff; padding:20px 0; text-align:center; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+    .hero { text-align:center; padding:60px 20px; background:#eee; }
+    .hero h1 { font-size:2.5em; margin-bottom:10px; }
+    .hero p { font-size:1.2em; }
+    .section { max-width:1000px; margin:40px auto; padding:0 20px; }
+    .portfolio { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .portfolio-item { background:#fff; border:1px solid #ddd; width:300px; padding:10px; text-align:center; }
+    .portfolio-item img { width:100%; height:auto; }
+    footer { background:#222; color:#fff; text-align:center; padding:20px 0; margin-top:40px; }
+    footer a { color:#fff; margin:0 10px; text-decoration:none; }
+  </style>
 </head>
 <body>
 
-<nav>
-    <h2>Sogno Decor</h2>
-    <div>
-        <a href="#home">Početna</a>
-        <a href="#about">O nama</a>
-        <a href="#contact">Kontakt</a>
+  <header>
+    <h1>Sogno Decor</h1>
+    <nav>
+      <a href="#home">Početna</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Dobrodošli u Sogno Decor</h1>
+    <p>Stilizirani i unikatni dekor za vaš dom i poslovni prostor</p>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2 style="text-align:center;">Naši projekti</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Proizvod+1" alt="Proizvod 1">
+        <h3>Proizvod 1</h3>
+        <p>Kratki opis proizvoda ili projekta.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Proizvod+2" alt="Proizvod 2">
+        <h3>Proizvod 2</h3>
+        <p>Kratki opis proizvoda ili projekta.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Proizvod+3" alt="Proizvod 3">
+        <h3>Proizvod 3</h3>
+        <p>Kratki opis proizvoda ili projekta.</p>
+      </div>
     </div>
-</nav>
+  </section>
 
-<div class="hero" id="home">
-    <h1>Dekoracije za nezaboravne trenutke</h1>
-</div>
+  <section class="section" id="contact">
+    <h2 style="text-align:center;">Kontakt</h2>
+    <p style="text-align:center;">Email: <a href="mailto:info@sognodecor.hr">info@sognodecor.hr</a></p>
+    <p style="text-align:center;">Telefon: +385 XX XXX XXXX</p>
+    <p style="text-align:center;">Pratite nas na društvenim mrežama:
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Pinterest</a>
+    </p>
+  </section>
 
-<section>
-    <h2 class="section-title">Naše dekoracije</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
-        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6">
-        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
-        <img src="https://images.unsplash.com/photo-1608889175119-b7c3e5b0df0b">
-        <img src="https://images.unsplash.com/photo-1544025162-d76694265947">
-        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
-    </div>
-</section>
-
-<section id="about">
-    <h2 class="section-title">O nama</h2>
-    <div class="about">
-        <p>
-        Sogno Decor specijaliziran je za dekoracije svadbi, rođendana,
-        božićnih i uskrsnih proslava te svih posebnih trenutaka u vašem životu.
-        Naša strast su detalji, elegancija i stvaranje atmosfere
-        koja ostavlja bez daha.
-        </p>
-        <p>
-        Svaki projekt prilagođavamo vašim željama,
-        kombinirajući bež i zlatne tonove s modernim dizajnom.
-        </p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2 class="section-title">Kontakt</h2>
-    <div class="contact">
-        <form>
-            <input type="text" placeholder="Ime i prezime">
-            <input type="email" placeholder="Email">
-            <textarea rows="5" placeholder="Poruka"></textarea>
-            <button type="submit">Pošalji upit</button>
-        </form>
-        <p>Email: info@sognodecor.hr</p>
-        <p>Telefon: +385 XX XXX XXXX</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Sogno Decor
-</footer>
+  <footer>
+    &copy; 2026 Sogno Decor. Sva prava pridržana.
+  </footer>
 
 </body>
 </html>
