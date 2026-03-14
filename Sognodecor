@@ -21,53 +21,53 @@
 </head>
 <body>
 
-  <header>
-    <h1>Sogno Decor</h1>
-    <nav>
-      <a href="#home">Početna</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-  </header>
+<header>
+  <h1>Sogno Decor</h1>
+  <nav>
+    <a href="#home">Početna</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
 
-  <section class="hero" id="home">
-    <h1>Dobrodošli u Sogno Decor</h1>
-    <p>Stilizirani i unikatni dekor za vaš dom i poslovni prostor</p>
-  </section>
+<section class="hero" id="home">
+  <h1>Dobrodošli u Sogno Decor</h1>
+  <p>Stilizirani i unikatni dekor za vaš dom i poslovni prostor</p>
+</section>
 
-  <section class="section" id="portfolio">
-    <h2 style="text-align:center;">Naši projekti</h2>
-    <div class="portfolio">
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Proizvod+1" alt="Proizvod 1">
-        <h3>Proizvod 1</h3>
-        <p>Kratki opis proizvoda ili projekta.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Proizvod+2" alt="Proizvod 2">
-        <h3>Proizvod 2</h3>
-        <p>Kratki opis proizvoda ili projekta.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Proizvod+3" alt="Proizvod 3">
-        <h3>Proizvod 3</h3>
-        <p>Kratki opis proizvoda ili projekta.</p>
-      </div>
+<section class="section" id="portfolio">
+  <h2 style="text-align:center;">Naši projekti</h2>
+  <div class="portfolio">
+    <div class="portfolio-item">
+      <img src="images/proizvod1.jpg" alt="Proizvod 1">
+      <h3>Proizvod 1</h3>
+      <p>Kratki opis proizvoda ili projekta.</p>
     </div>
-  </section>
+    <div class="portfolio-item">
+      <img src="images/proizvod2.jpg" alt="Proizvod 2">
+      <h3>Proizvod 2</h3>
+      <p>Kratki opis proizvoda ili projekta.</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/proizvod3.jpg" alt="Proizvod 3">
+      <h3>Proizvod 3</h3>
+      <p>Kratki opis proizvoda ili projekta.</p>
+    </div>
+  </div>
+</section>
 
-  <section class="section" id="contact">
-    <h2 style="text-align:center;">Kontakt</h2>
-    <p style="text-align:center;">Email: <a href="mailto:info@sognodecor.hr">info@sognodecor.hr</a></p>
-    <p style="text-align:center;">Telefon: +385 XX XXX XXXX</p>
-    <p style="text-align:center;">Pratite nas na društvenim mrežama:
-      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Pinterest</a>
-    </p>
-  </section>
+<section class="section" id="contact">
+  <h2 style="text-align:center;">Kontakt</h2>
+  <p style="text-align:center;">Email: <a href="mailto:info@sognodecor.hr">info@sognodecor.hr</a></p>
+  <p style="text-align:center;">Telefon: +385 XX XXX XXXX</p>
+  <p style="text-align:center;">Pratite nas na društvenim mrežama:
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Pinterest</a>
+  </p>
+</section>
 
-  <footer>
-    &copy; 2026 Sogno Decor. Sva prava pridržana.
-  </footer>
+<footer>
+  &copy; 2026 Sogno Decor. Sva prava pridržana.
+</footer>
 
 </body>
 </html>
